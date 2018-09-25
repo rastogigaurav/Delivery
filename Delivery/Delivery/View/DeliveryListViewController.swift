@@ -9,11 +9,16 @@
 import UIKit
 
 class DeliveryListViewController: UIViewController {
+    private enum CellIdentifiers {
+        static let list = "DeliveryList"
+    }
+    
+    private var viewModel = DeliveryListViewModel.create()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        viewModel.didLoad()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +26,11 @@ class DeliveryListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: Private Methods
+    private func setupViewModel(){
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +40,17 @@ class DeliveryListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension DeliveryListViewController : UITableViewDataSource {
+    // MARK: Delegate & Datasource methods of UITableView
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRows()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.list, for: indexPath) as! DeliveryItemTableViewCell
+        cell.configure(with: viewModel.deliveryItem(at: indexPath.row))
+        return cell
+    }
 }
