@@ -13,22 +13,13 @@ protocol DisplayDeliveryListProtocol {
     /// Methods used to fetch list of items to be delivered
     ///
     /// - Parameter completionHandler: handler used to return items list on completion
-    func fetchDeliveries(completionHandler:@escaping ([DeliveryItem]?)->Void) ->Void
+    mutating func fetch(deliveries offset: Int, and limit: Int, completion: @escaping (Result<[Delivery],DataResponseError>) -> Void) ->Void
 }
 
-struct DisplayDeliveryList {
-    
-    var repository : DeliveryListRepositoryProtocol
-    
-    init(with repository:DeliveryListRepositoryProtocol) {
-        self.repository = repository
-    }
-}
-
-extension DisplayDeliveryList : DisplayDeliveryListProtocol{
-    func fetchDeliveries(completionHandler: @escaping ([DeliveryItem]?) -> Void) {
-        self.repository.getDeliveries(with: 0, and: 10) {
-            completionHandler(.none)
+struct DisplayDeliveryList : DisplayDeliveryListProtocol{
+    func fetch(deliveries offset: Int, and limit: Int, completion: @escaping (Result<[Delivery],DataResponseError>) -> Void) {
+        APIClient.get(deliveriesWith: offset, limit: limit) { result in
+            completion(result)
         }
     }
 }

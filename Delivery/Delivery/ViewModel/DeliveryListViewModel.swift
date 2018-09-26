@@ -10,24 +10,41 @@ import UIKit
 
 protocol DeliveryItemViewModelProtocol {
     
-    /// Method used to notify view has been loaded and further it initiating the list fetch
+    /// Method used to notify view has been loaded and further it is initiating the list fetch
     mutating func didLoad()
     
     /// Method used to return number of rows to be displayed in All Deliveries Table
     ///
-    /// - Returns: Count of number of items [Deliveriry Items]
+    /// - Returns: Count of number of items [Deliveriry]
     func numberOfRows()->Int
     
-    /// Method used to return DeliveryItem instance at parametric index
+    /// Method used to return Delivery instance at parametric index
     ///
     /// - Parameter index: Index to pick out Delivery Item at
-    /// - Returns: An instance of Delivery Item
-    func deliveryItem(at index:Int)->DeliveryItem
+    /// - Returns: An instance of Delivery
+    func delivery(at index:Int)->Delivery
+    
+    func fetchData(offset: Int, limit: Int, shouldAppend: Bool)->Void
 }
 
-struct DeliveryListViewModel {
-    var items : [DeliveryItem] = []
-    var interactor : DisplayDeliveryListProtocol
+class DeliveryListViewModel {
+    
+    /// An Integger variable used to track the index of last fetched DeliveryItem
+    var currentlastFetchedIndex = 0
+    
+    /// An Array used to store all delivery items fetched
+    var items : [Delivery] = []
+    
+    /// An private instance of DisplayDeliveryListProtocol <Interactor>
+    private var interactor : DisplayDeliveryListProtocol
+    
+    /// A Closure used to notify View/Controller to re-render/reload UI
+    var reload : ((_ success: Bool, _ dataCount: Int)->Void) = { _,_ in }
+    
+    /// A String variable used to retrieve View/Controller title
+    var title = {
+        return "Things to Deliver"
+    }
     
     /// Custom initialization methods used to inject dependencies and thus instantiate DeliveryListViewModel
     ///
@@ -43,26 +60,33 @@ extension DeliveryListViewModel : DeliveryItemViewModelProtocol {
     ///
     /// - Returns: An instance of DeliveryListViewModel
     static func create()->DeliveryListViewModel {
-        let repository:DeliveryListRepository = DeliveryListRepository()
-        let interactor:DisplayDeliveryList = DisplayDeliveryList(with: repository)
+        let interactor:DisplayDeliveryList = DisplayDeliveryList()
         return DeliveryListViewModel(with: interactor)
     }
     
-    mutating func didLoad(){
-        self.interactor.fetchDeliveries { list in
-            guard let itemsFetched = list else {
-                print("No Items Found to be Delivered")
-                return
-            }
-            //self.items = itemsFetched
-        }
+    func didLoad(){
+        fetchData(offset: 0, limit: limit, shouldAppend: false)
     }
     
     func numberOfRows()-> Int{
         return self.items.count
     }
     
-    func deliveryItem(at index: Int) -> DeliveryItem {
+    func delivery(at index: Int) -> Delivery {
         return self.items[index]
+    }
+    
+    func fetchData(offset: Int, limit: Int, shouldAppend: Bool) {
+        self.interactor.fetch(deliveries: offset, and: limit) { (result) in
+            switch result {
+            case .success(let itemsFetched):
+                self.items += itemsFetched
+                self.reload(true, itemsFetched.count)
+                break
+            case .failure:
+                self.reload(false, 0)
+                break
+            }
+        }
     }
 }

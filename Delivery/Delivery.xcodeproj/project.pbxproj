@@ -10,22 +10,29 @@
 		0B9D0201FDA0C23297CD2942 /* Pods_DeliveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D1B7B115B6F38F33BCC601 /* Pods_DeliveryTests.framework */; };
 		3B46BAE0A302BBBACFE4A084 /* Pods_Delivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD5D72C83A3586F7ACAA315 /* Pods_Delivery.framework */; };
 		682C8587D0C0536A8FA568E6 /* Pods_DeliveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5312758D6DA4EA85CD36FB17 /* Pods_DeliveryUITests.framework */; };
-		C22A88AD21594D6700492C2B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A88AC21594D6700492C2B /* APIClient.swift */; };
 		C24C85742157A96E002063DD /* Delivery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24C85732157A96E002063DD /* Delivery.storyboard */; };
 		C24C85762157A9C9002063DD /* DeliveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C85752157A9C9002063DD /* DeliveryListViewController.swift */; };
 		C24C857B2157B7FC002063DD /* DeliveryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C857A2157B7FC002063DD /* DeliveryListViewModel.swift */; };
 		C24C857D2157B829002063DD /* DisplayDeliveryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C857C2157B829002063DD /* DisplayDeliveryList.swift */; };
-		C24C857F2157B85B002063DD /* DeliveryListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C857E2157B85B002063DD /* DeliveryListRepository.swift */; };
-		C24C85822157C63B002063DD /* DeliveryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C85812157C63B002063DD /* DeliveryItem.swift */; };
-		C24C85882157ED66002063DD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C85872157ED66002063DD /* NetworkManager.swift */; };
 		C24C858C2157F7C4002063DD /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C24C858B2157F7C4002063DD /* Config.plist */; };
 		C24C858E2157FEFB002063DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C858D2157FEFB002063DD /* Constants.swift */; };
 		C24C85942158A9C9002063DD /* DeliveryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C85932158A9C9002063DD /* DeliveryItemTableViewCell.swift */; };
 		C2618DE92154FA6D000CE5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2618DE82154FA6D000CE5B4 /* Assets.xcassets */; };
 		C2618DEC2154FA6D000CE5B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2618DEA2154FA6D000CE5B4 /* LaunchScreen.storyboard */; };
-		C2618DF72154FA6E000CE5B4 /* DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2618DF62154FA6E000CE5B4 /* DeliveryTests.swift */; };
 		C2618E022154FA6E000CE5B4 /* DeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2618E012154FA6E000CE5B4 /* DeliveryUITests.swift */; };
 		C2618E172155018B000CE5B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2618E152155018B000CE5B4 /* AppDelegate.swift */; };
+		C2F8D3F0215B719F00CC7CD8 /* DeliveryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3EF215B719F00CC7CD8 /* DeliveryDetailViewModel.swift */; };
+		C2F8D3F4215B8C6200CC7CD8 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */; };
+		C2F8D3F6215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */; };
+		C2F8D3FC215C0CE500CC7CD8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3FB215C0CE500CC7CD8 /* String+Extensions.swift */; };
+		C2F8D404215C154400CC7CD8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D400215C154400CC7CD8 /* APIClient.swift */; };
+		C2F8D405215C154400CC7CD8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D401215C154400CC7CD8 /* Result.swift */; };
+		C2F8D406215C154400CC7CD8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D402215C154400CC7CD8 /* APIRouter.swift */; };
+		C2F8D407215C154400CC7CD8 /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D403215C154400CC7CD8 /* DataResponseError.swift */; };
+		C2F8D409215C157E00CC7CD8 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D408215C157E00CC7CD8 /* Delivery.swift */; };
+		C2F8D40E215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D40D215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift */; };
+		C2F8D412215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D411215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift */; };
+		C2F8D416215C233300CC7CD8 /* DeliveryListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D415215C233300CC7CD8 /* DeliveryListViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +60,10 @@
 		641BA1BE582C4831F48492B7 /* Pods-Delivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delivery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Delivery/Pods-Delivery.release.xcconfig"; sourceTree = "<group>"; };
 		7A899EB293AFC981C5A96EC7 /* Pods-DeliveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryTests/Pods-DeliveryTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2D1B7B115B6F38F33BCC601 /* Pods_DeliveryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22A88AC21594D6700492C2B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C24C85732157A96E002063DD /* Delivery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Delivery.storyboard; sourceTree = "<group>"; };
 		C24C85752157A9C9002063DD /* DeliveryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewController.swift; sourceTree = "<group>"; };
 		C24C857A2157B7FC002063DD /* DeliveryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewModel.swift; sourceTree = "<group>"; };
 		C24C857C2157B829002063DD /* DisplayDeliveryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDeliveryList.swift; sourceTree = "<group>"; };
-		C24C857E2157B85B002063DD /* DeliveryListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListRepository.swift; sourceTree = "<group>"; };
-		C24C85812157C63B002063DD /* DeliveryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryItem.swift; sourceTree = "<group>"; };
-		C24C85872157ED66002063DD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C24C858B2157F7C4002063DD /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		C24C858D2157FEFB002063DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C24C85932158A9C9002063DD /* DeliveryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,12 +72,23 @@
 		C2618DEB2154FA6D000CE5B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2618DED2154FA6D000CE5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2618DF22154FA6E000CE5B4 /* DeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2618DF62154FA6E000CE5B4 /* DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTests.swift; sourceTree = "<group>"; };
 		C2618DF82154FA6E000CE5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2618DFD2154FA6E000CE5B4 /* DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2618E012154FA6E000CE5B4 /* DeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryUITests.swift; sourceTree = "<group>"; };
 		C2618E032154FA6E000CE5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2618E152155018B000CE5B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2F8D3EF215B719F00CC7CD8 /* DeliveryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewModel.swift; sourceTree = "<group>"; };
+		C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
+		C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
+		C2F8D3FB215C0CE500CC7CD8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		C2F8D400215C154400CC7CD8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C2F8D401215C154400CC7CD8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2F8D402215C154400CC7CD8 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		C2F8D403215C154400CC7CD8 /* DataResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
+		C2F8D408215C157E00CC7CD8 /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		C2F8D40D215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDeliveryListTest.swift; sourceTree = "<group>"; };
+		C2F8D411215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDeliveryListMock.swift; sourceTree = "<group>"; };
+		C2F8D415215C233300CC7CD8 /* DeliveryListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewModelTest.swift; sourceTree = "<group>"; };
 		D50D08657D26A1D244A8F50A /* Pods-DeliveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryTests/Pods-DeliveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD5D72C83A3586F7ACAA315 /* Pods_Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C24C857A2157B7FC002063DD /* DeliveryListViewModel.swift */,
+				C2F8D3EF215B719F00CC7CD8 /* DeliveryDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,28 +148,12 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		C24C85792157B78A002063DD /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				C24C857E2157B85B002063DD /* DeliveryListRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		C24C85802157C61D002063DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C24C85812157C63B002063DD /* DeliveryItem.swift */,
+				C2F8D408215C157E00CC7CD8 /* Delivery.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C24C85862157ED3D002063DD /* Network Manager */ = {
-			isa = PBXGroup;
-			children = (
-				C24C85872157ED66002063DD /* NetworkManager.swift */,
-			);
-			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 		C2618DD52154FA66000CE5B4 = {
@@ -186,7 +185,6 @@
 				C2618E0F2155018A000CE5B4 /* Services */,
 				C2618E142155018B000CE5B4 /* Application */,
 				C24C85802157C61D002063DD /* Model */,
-				C24C85792157B78A002063DD /* Repository */,
 				C24C85782157B78A002063DD /* Interactor */,
 				C24C85772157B78A002063DD /* ViewModel */,
 				C2618E122155018B000CE5B4 /* View */,
@@ -201,7 +199,9 @@
 		C2618DF52154FA6E000CE5B4 /* DeliveryTests */ = {
 			isa = PBXGroup;
 			children = (
-				C2618DF62154FA6E000CE5B4 /* DeliveryTests.swift */,
+				C2F8D40C215C1BA100CC7CD8 /* Interactors */,
+				C2F8D40A215C1BA100CC7CD8 /* Mocks */,
+				C2F8D40B215C1BA100CC7CD8 /* ViewModels */,
 				C2618DF82154FA6E000CE5B4 /* Info.plist */,
 			);
 			path = DeliveryTests;
@@ -219,8 +219,7 @@
 		C2618E0F2155018A000CE5B4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C24C85862157ED3D002063DD /* Network Manager */,
-				C22A88AC21594D6700492C2B /* APIClient.swift */,
+				C2F8D3FF215C154400CC7CD8 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -231,6 +230,8 @@
 				C24C85732157A96E002063DD /* Delivery.storyboard */,
 				C24C85752157A9C9002063DD /* DeliveryListViewController.swift */,
 				C24C85932158A9C9002063DD /* DeliveryItemTableViewCell.swift */,
+				C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */,
+				C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				C24C858D2157FEFB002063DD /* Constants.swift */,
+				C2F8D3FB215C0CE500CC7CD8 /* String+Extensions.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -249,6 +251,41 @@
 				C2618E152155018B000CE5B4 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		C2F8D3FF215C154400CC7CD8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8D400215C154400CC7CD8 /* APIClient.swift */,
+				C2F8D401215C154400CC7CD8 /* Result.swift */,
+				C2F8D402215C154400CC7CD8 /* APIRouter.swift */,
+				C2F8D403215C154400CC7CD8 /* DataResponseError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C2F8D40A215C1BA100CC7CD8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8D411215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C2F8D40B215C1BA100CC7CD8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8D415215C233300CC7CD8 /* DeliveryListViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2F8D40C215C1BA100CC7CD8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8D40D215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		DF1C4B34AEBD3EEC934F9261 /* Pods */ = {
@@ -404,14 +441,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Delivery/Pods-Delivery-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TableviewPaginator/TableviewPaginator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TableviewPaginator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -479,16 +516,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F8D3F6215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift in Sources */,
+				C2F8D405215C154400CC7CD8 /* Result.swift in Sources */,
 				C24C85762157A9C9002063DD /* DeliveryListViewController.swift in Sources */,
 				C24C85942158A9C9002063DD /* DeliveryItemTableViewCell.swift in Sources */,
 				C2618E172155018B000CE5B4 /* AppDelegate.swift in Sources */,
-				C22A88AD21594D6700492C2B /* APIClient.swift in Sources */,
-				C24C85822157C63B002063DD /* DeliveryItem.swift in Sources */,
-				C24C85882157ED66002063DD /* NetworkManager.swift in Sources */,
+				C2F8D3F4215B8C6200CC7CD8 /* DeliveryDetailViewController.swift in Sources */,
+				C2F8D406215C154400CC7CD8 /* APIRouter.swift in Sources */,
 				C24C857D2157B829002063DD /* DisplayDeliveryList.swift in Sources */,
+				C2F8D407215C154400CC7CD8 /* DataResponseError.swift in Sources */,
+				C2F8D3FC215C0CE500CC7CD8 /* String+Extensions.swift in Sources */,
 				C24C857B2157B7FC002063DD /* DeliveryListViewModel.swift in Sources */,
-				C24C857F2157B85B002063DD /* DeliveryListRepository.swift in Sources */,
+				C2F8D3F0215B719F00CC7CD8 /* DeliveryDetailViewModel.swift in Sources */,
+				C2F8D409215C157E00CC7CD8 /* Delivery.swift in Sources */,
 				C24C858E2157FEFB002063DD /* Constants.swift in Sources */,
+				C2F8D404215C154400CC7CD8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +538,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2618DF72154FA6E000CE5B4 /* DeliveryTests.swift in Sources */,
+				C2F8D412215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift in Sources */,
+				C2F8D40E215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift in Sources */,
+				C2F8D416215C233300CC7CD8 /* DeliveryListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

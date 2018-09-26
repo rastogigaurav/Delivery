@@ -1,17 +1,15 @@
 //
-//  APIClient.swift
+//  APIRouter.swift
 //  Delivery
 //
-//  Created by Gaurav Rastogi on 9/24/18.
+//  Created by Gaurav Rastogi on 9/27/18.
 //  Copyright © 2018 Gaurav Rastogi. All rights reserved.
 //
 
 import Alamofire
-import CodableAlamofire
 import Foundation
 
 enum APIRouter: URLRequestConvertible {
-    
     case deliveries(offset: Int, limit: Int)
     
     // MARK: - HTTPMethod
@@ -61,17 +59,5 @@ enum APIRouter: URLRequestConvertible {
         }
         
         return urlRequest
-    }
-}
-
-struct APIClient {
-    static func getDeliveries(offset:Int, limit:Int, completion:@escaping (Result<[DeliveryItem]>)->Void) {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .secondsSince1970
-        Alamofire.request(APIRouter.deliveries(offset: offset, limit: limit))
-            .responseDecodableObject(decoder: decoder) { (response: DataResponse<[DeliveryItem]>) in
-                print("Result : \(String(describing: response.result.value))")
-                completion(response.result)
-        }
     }
 }

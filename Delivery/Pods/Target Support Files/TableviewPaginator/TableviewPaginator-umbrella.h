@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import "CodableAlamofire.h"
 
-FOUNDATION_EXPORT double CodableAlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char CodableAlamofireVersionString[];
+FOUNDATION_EXPORT double TableviewPaginatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char TableviewPaginatorVersionString[];
 

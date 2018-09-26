@@ -7,6 +7,8 @@
 //
 
 
+/// An Integer variable used to retrieve the number of Item <DeliveryItem> to be displayed on Delivery List Screen
+var limit = 6
 
 enum InternetProtocol : String {
     case http = "http://"
@@ -41,4 +43,3 @@ enum HTTPHeaderField: String {
 enum ContentType: String {
     case json = "application/json"
 }
-

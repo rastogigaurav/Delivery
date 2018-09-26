@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DeliveryItemTableViewCell: UITableViewCell {
 
@@ -14,28 +15,12 @@ class DeliveryItemTableViewCell: UITableViewCell {
     @IBOutlet weak var mainTitleLbl: UILabel!
     @IBOutlet weak var deliveryLocationLbl: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        configure(with: .none)
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    func configure(with  deliveryItem:DeliveryItem?){
-        if let dItem = deliveryItem{
-            //self.deliveryLocationLbl.text = dItem.location.address
-        }
-        else{
-            
+    func configure(with delivery:Delivery){
+        self.mainTitleLbl.text = delivery.description + " at"
+        self.deliveryLocationLbl.text = delivery.location.address
+        
+        if let imageUrl = delivery.imageUrl{
+            deliveryItemImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "deliveryIcon"))
         }
     }
 
