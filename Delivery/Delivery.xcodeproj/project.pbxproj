@@ -23,7 +23,6 @@
 		C2618E172155018B000CE5B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2618E152155018B000CE5B4 /* AppDelegate.swift */; };
 		C2F8D3F0215B719F00CC7CD8 /* DeliveryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3EF215B719F00CC7CD8 /* DeliveryDetailViewModel.swift */; };
 		C2F8D3F4215B8C6200CC7CD8 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */; };
-		C2F8D3F6215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */; };
 		C2F8D3FC215C0CE500CC7CD8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D3FB215C0CE500CC7CD8 /* String+Extensions.swift */; };
 		C2F8D404215C154400CC7CD8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D400215C154400CC7CD8 /* APIClient.swift */; };
 		C2F8D405215C154400CC7CD8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D401215C154400CC7CD8 /* Result.swift */; };
@@ -33,6 +32,7 @@
 		C2F8D40E215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D40D215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift */; };
 		C2F8D412215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D411215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift */; };
 		C2F8D416215C233300CC7CD8 /* DeliveryListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D415215C233300CC7CD8 /* DeliveryListViewModelTest.swift */; };
+		C2F8D418215C37E000CC7CD8 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8D417215C37DF00CC7CD8 /* LoadMoreTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		C2618E152155018B000CE5B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2F8D3EF215B719F00CC7CD8 /* DeliveryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewModel.swift; sourceTree = "<group>"; };
 		C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
-		C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 		C2F8D3FB215C0CE500CC7CD8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		C2F8D400215C154400CC7CD8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C2F8D401215C154400CC7CD8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		C2F8D40D215C1BCB00CC7CD8 /* DisplayDeliveryListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDeliveryListTest.swift; sourceTree = "<group>"; };
 		C2F8D411215C1C3600CC7CD8 /* DisplayDeliveryListMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDeliveryListMock.swift; sourceTree = "<group>"; };
 		C2F8D415215C233300CC7CD8 /* DeliveryListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewModelTest.swift; sourceTree = "<group>"; };
+		C2F8D417215C37DF00CC7CD8 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 		D50D08657D26A1D244A8F50A /* Pods-DeliveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryTests/Pods-DeliveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD5D72C83A3586F7ACAA315 /* Pods_Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -227,11 +227,11 @@
 		C2618E122155018B000CE5B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2F8D417215C37DF00CC7CD8 /* LoadMoreTableViewCell.swift */,
 				C24C85732157A96E002063DD /* Delivery.storyboard */,
 				C24C85752157A9C9002063DD /* DeliveryListViewController.swift */,
 				C24C85932158A9C9002063DD /* DeliveryItemTableViewCell.swift */,
 				C2F8D3F3215B8C6200CC7CD8 /* DeliveryDetailViewController.swift */,
-				C2F8D3F5215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F8D3F6215BFDEA00CC7CD8 /* LoadMoreTableViewCell.swift in Sources */,
 				C2F8D405215C154400CC7CD8 /* Result.swift in Sources */,
 				C24C85762157A9C9002063DD /* DeliveryListViewController.swift in Sources */,
 				C24C85942158A9C9002063DD /* DeliveryItemTableViewCell.swift in Sources */,
@@ -529,6 +528,7 @@
 				C24C857B2157B7FC002063DD /* DeliveryListViewModel.swift in Sources */,
 				C2F8D3F0215B719F00CC7CD8 /* DeliveryDetailViewModel.swift in Sources */,
 				C2F8D409215C157E00CC7CD8 /* Delivery.swift in Sources */,
+				C2F8D418215C37E000CC7CD8 /* LoadMoreTableViewCell.swift in Sources */,
 				C24C858E2157FEFB002063DD /* Constants.swift in Sources */,
 				C2F8D404215C154400CC7CD8 /* APIClient.swift in Sources */,
 			);
